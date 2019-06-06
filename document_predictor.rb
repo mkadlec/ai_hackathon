@@ -15,6 +15,9 @@ def payload_hash
       image: {
         imageBytes: data
       }
+    },
+    params: {
+      score_threshold: '0.0'
     }
   }
 end
