@@ -1,0 +1,906 @@
+ai_hackathon [master] ➜ ruby document_predictor.rb
+Processing 2019-04-29-191903.jpg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.14407673
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.14819832
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 0
+Processing 002.jpg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.046507128
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.14304073
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 0
+Processing 1C140B81-B3BC-4575-8960-EDC5329A246E.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.29362118
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.29596436
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 0
+Processing 907C9D0E-A3D7-4F24-846E-A74CA0EB9E61.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.42086276
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.24009004
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 0
+Processing 9C143949-47F0-43D7-B594-A4DA0F8BD179.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.099671125
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.21915975
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 0
+Processing .DS_Store...
+{
+  "error": {
+    "code": 400,
+    "message": "Provided image is not valid.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+Error processing data
+Is this a marriage certificate?
+Marriage cert count: 0
+Processing 2019_03_21_7_20_AM_Office_Lens.jpg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.07524512
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.58050793
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? true
+Marriage cert count: 1
+Processing 5FACB237-096F-4EEE-B083-34E6F1CF1E46.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.19147436
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.12252093
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 3F393934-D0B7-4CE5-B120-3788663BAE75.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.21223116
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.2480051
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 8F075623-4742-48DB-BE8C-3BF072B0269E.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.6273638
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.572959
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 77A4E5D5-B655-4BD8-8A79-4B07658E5624.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.37509668
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.15170862
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 001-1.jpg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.108115524
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.09291739
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 2016_fed_tax_return_005.tif...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.2435757
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.1773966
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 6AE2FD4A-6F27-4035-BC68-B78407F2A107.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.31753704
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.21640807
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 6E555E22-66FB-4DEB-B16F-41EFC7EC769E.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.73777807
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.2870427
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 2018-11-11_20.54.37.jpg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.36165035
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.18980607
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 159E7F21-FECD-42BE-B155-9C8F2FD0E208.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.5600821
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.3542519
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 46C75E3B-BDD0-495E-89F6-88A5DDA6592F.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.76462597
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.19728975
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 09C3133C-B1CB-43A3-B1BD-770400C2536A.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.72762966
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.4865887
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 092B1E5E-7ED9-463C-8CD3-53106CC90B31.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.15264075
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.31767303
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 0D7417A4-4A8C-4A89-A421-EB44812FBB51.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.2239532
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.4480131
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 1
+Processing 3FC1BDFE-11A1-464F-95F8-DC5B7DF76D32.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.067827135
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.4239109
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? true
+Marriage cert count: 2
+Processing 6B2FD4E6-C64D-4EB6-8229-08E1E3C823E6.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.40422866
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.07814016
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 0-1.jpg...
+^@{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.36426666
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.72837657
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 9BC1E99E-D10F-434B-86FD-BC7F8EE29B3E.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.14215966
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.30600768
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 78BEA506-EFC2-4E13-B03C-266F548EDC52.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.15629898
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.36569482
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 9055B13D-A018-447B-B2E0-A6AD95664F9A.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.20970908
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.2338521
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 993F25D4-F61D-49F5-BD08-181290F7B310.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.26112553
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.4518399
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 0EF97FF0-6290-4E75-98A0-C545CA371F83.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.4963301
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.27868962
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 27FEA0A0-E519-4217-8ADA-4EC019563C88.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.3407217
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.21570262
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 6719.jpg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.365947
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.3648321
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 32fb0bfd4f9d4601ad78761460b5495f.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.4042956
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.31672454
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 7F6CB8C8-3067-4365-9DE9-210CF80FE6C3.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.50873965
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.083935075
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 10DF8748-0284-4AE5-ABAE-B29AFEFD3C54.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.24853097
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.17565905
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 9-3-17license.jpg...
+^@{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.726887
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.6706566
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 7523D8E5-81F0-4020-BFC9-C241357D048C.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.13440904
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.32319102
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 916DF325-FD7F-428A-A839-8C82F91C70C6.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.5591959
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.26534832
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 2ABF74BC-91A7-452A-A09F-18C915E1CC20.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.32645118
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.30223078
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 0F33B383-FCCB-41AF-8B0C-DFDE3BBEA77E.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.67113215
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.47315508
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 43486.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.11960854
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.3284459
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 4CF4736A-95E1-4BCF-BDA0-556561F7C4F8.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.12911814
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.2106435
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 2
+Processing 155.JPG...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.031157752
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.32724997
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? true
+Marriage cert count: 3
+Processing 1BA6E2AC-F234-4521-8365-703C301DF406.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.119862325
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.16870277
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 3
+Processing 94B68572-5836-4ED1-88AB-91D260EA4FC9.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.32670245
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.56948596
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 3
+Processing 4D5589DD-E15B-4E7B-B7F7-2DD29703CB63.JPG...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.17344196
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.13828011
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 3
+Processing 87E00493-3A95-4FC9-A22B-5C9DAA2818EF.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.6355039
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.13368289
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 3
+Processing 93ADFDFC-ED1F-46EC-A1D0-7C60C8D1126A.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.22140798
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.20592228
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? false
+Marriage cert count: 3
+Processing 8FD6271D-9879-4B0A-99E4-95B8215DC663.jpeg...
+{
+  "payload": [
+    {
+      "classification": {
+        "score": 0.08896386
+      },
+      "displayName": "birthCertificate"
+    },
+    {
+      "classification": {
+        "score": 0.45317551
+      },
+      "displayName": "marriage"
+    }
+  ]
+}
+Is this a marriage certificate? true
+Marriage cert count: 4
+total file count: 47
