@@ -9,7 +9,7 @@ class ProbabilityCalculator
   attr_reader :payload, :validity_threshold
 
   def initialize(payload, validity_threshold)
-    @payload = ::Payload.new(payload).sorted
+    @payload = AiHackathon::Payload.new(payload).sorted
     @validity_threshold = validity_threshold
   end
 
