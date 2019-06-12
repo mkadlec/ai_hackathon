@@ -6,7 +6,7 @@ require './models/probability_calculator.rb'
 
 module AiHackathon
   module Documents
-    class Validator
+    class ImageValidation
 
       PAYLOAD_FILE = 'request.json'
       ACCEPTABLE_THRESHOLD = 5
