@@ -13,10 +13,6 @@ def move_file(file_name, success)
   File.rename("#{TEST_FILE_DIR}/#{file_name}", "#{TEST_FILE_DIR}/#{folder_name}/#{file_name}")
 end
 
-document_type = :marriage
-total_file_count = Dir[TEST_FILE_DIR + '/**/*'].length
-text_locator_keywords = ['Marriage', 'Matrimony', 'License', 'Wedlock', 'Witness']
-
 def analyze_file_by_document_type(document_type, file_name, keywords)
   file_data = retrieve_data(file_name)
   result = AiHackathon::Documents::ImageValidation.new(file_data, document_type).validate
@@ -32,23 +28,30 @@ def analyze_file_by_document_type(document_type, file_name, keywords)
   found
 end
 
-certification_count = 0
+def analyze_documents(document_type, text_locator_keywords)
+  certification_count = 0
+  Dir.foreach(TEST_FILE_DIR) do |file_item|
+    next if file_item == '.'
+    next if file_item == '..'
+    file_name = file_item.to_s
+    puts "Processing #{file_name}..."
+    next unless File.file?("#{TEST_FILE_DIR}/#{file_name}")
+    found = analyze_file_by_document_type(document_type, file_name, text_locator_keywords)
 
-Dir.foreach(TEST_FILE_DIR) do |file_item|
-  next if file_item == '.'
-  next if file_item == '..'
-  file_name = file_item.to_s
-  puts "Processing #{file_name}..."
-  next unless File.file?("#{TEST_FILE_DIR}/#{file_name}")
-  found = analyze_file_by_document_type(document_type, file_name, text_locator_keywords)
+    certification_count += 1 if found
+    move_file(file_name, found)
 
-  certification_count += 1 if found
-  move_file(file_name, found)
-
-  puts 'Marriage cert count: ' + certification_count.to_s
-  sleep(3)
+    puts 'Certifications found: ' + certification_count.to_s
+    sleep(3)
+  end
 end
 
-puts 'total file count: ' + total_file_count.to_s
+document_type = :marriage
+total_file_count = Dir[TEST_FILE_DIR + '/**/*'].length
+text_locator_keywords = ['Marriage', 'Matrimony', 'License', 'Wedlock', 'Witness']
+
+analyze_documents(document_type, text_locator_keywords)
+
+puts 'Total file count: ' + total_file_count.to_s
 
 
