@@ -9,7 +9,7 @@ module AiHackathon
     class Validator
 
       PAYLOAD_FILE = 'request.json'
-      ACCEPTABLE_THRESHOLD = 10
+      ACCEPTABLE_THRESHOLD = 5
 
       def initialize(data, document_type)
         @data = data
@@ -34,11 +34,6 @@ module AiHackathon
           puts 'Error processing data'
           return
         end
-
-        # doc_type = payload[0]['displayName'].to_s
-        # certainty = (payload[0]['classification']['score'] * 100).round(2)
-        #
-        # #puts "This is classified as #{doc_type} with #{certainty}% certainty."
 
         probability_calculator = ProbabilityCalculator.new(payload, ACCEPTABLE_THRESHOLD)
 
