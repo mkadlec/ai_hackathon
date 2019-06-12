@@ -23,7 +23,7 @@ module AiHackathon
 
         stdout, stderr, status = Open3.capture3(curl_command)
 
-        puts stdout
+        #puts stdout
 
         ret_val = JSON.parse(stdout)
         payload = ret_val['payload']
