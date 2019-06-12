@@ -4,7 +4,7 @@ require './models/documents/text_validation.rb'
 TEST_FILE_DIR = '/Users/MKadlec/Documents/ai'
 
 def retrieve_data(file_name)
-  file_path = "/Users/MKadlec/Documents/ai/#{file_name}"
+  file_path = "#{TEST_FILE_DIR}/#{file_name}"
   Base64.encode64(File.read(file_path)).gsub("\n", '')
 end
 
