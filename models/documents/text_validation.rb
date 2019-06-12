@@ -24,21 +24,27 @@ module AiHackathon
         stdout, stderr, status = Open3.capture3(curl_command)
 
         ret_val = JSON.parse(stdout)
-
-        response = ret_val['responses'].first
-        return false unless !!response['textAnnotations']
-        annotations = response['textAnnotations'].first
-        parsed_text = annotations['description']
+        parsed_text = parse_text(ret_val['responses'])
+        return false unless parsed_text
 
         @keywords.each do |keyword|
-          puts "Checking #{keyword}"
-          return true if parsed_text.include? keyword
+          if parsed_text.include? keyword
+            puts "Found by the #{keyword} keyword."
+            return true
+          end
         end
 
         false
       end
 
       private
+
+      def parse_text(responses)
+        response = responses.first
+        return nil unless !!response['textAnnotations']
+        annotations = response['textAnnotations'].first
+        annotations['description']
+      end
 
       def payload_hash
         hash = {

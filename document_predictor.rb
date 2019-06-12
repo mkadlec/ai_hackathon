@@ -13,35 +13,39 @@ def move_file(file_name, success)
   File.rename("#{TEST_FILE_DIR}/#{file_name}", "#{TEST_FILE_DIR}/#{folder_name}/#{file_name}")
 end
 
-marriage_cert_count = 0
-
+document_type = :marriage
 total_file_count = Dir[TEST_FILE_DIR + '/**/*'].length
+text_locator_keywords = ['Marriage', 'Matrimony', 'License', 'Wedlock', 'Witness']
+
+def analyze_file_by_document_type(document_type, file_name, keywords)
+  file_data = retrieve_data(file_name)
+  result = AiHackathon::Documents::ImageValidation.new(file_data, document_type).validate
+  if result
+    found = true
+    puts "By image recognition, this was confirmed to be a #{document_type.to_s}"
+  else
+    puts 'Checking text recognition...'
+    text_result = AiHackathon::Documents::TextValidation.new(file_data, keywords).validate
+    puts 'Results of text search: ' + text_result.to_s
+    found = true if text_result
+  end
+  found
+end
+
+certification_count = 0
 
 Dir.foreach(TEST_FILE_DIR) do |file_item|
   next if file_item == '.'
   next if file_item == '..'
   file_name = file_item.to_s
   puts "Processing #{file_name}..."
-  found = false
-  next unless File.file?("/Users/MKadlec/Documents/ai/#{file_name}")
-  file_data = retrieve_data(file_name)
-  result = AiHackathon::Documents::ImageValidation.new(file_data, :marriage).validate
-  if result
-    found = true
-    puts 'Based on image recognition, this is a Marriage Certificate. '
-  else
-    puts 'Checking text recognition...'
-    marriage_keywords = ['Marriage', 'Matrimony', 'License', 'Wedlock', 'Witness']
-    text_result = AiHackathon::Documents::TextValidation.new(file_data, marriage_keywords).validate
-    puts 'Results of text search: ' + text_result.to_s
-    found = true if text_result
-  end
+  next unless File.file?("#{TEST_FILE_DIR}/#{file_name}")
+  found = analyze_file_by_document_type(document_type, file_name, text_locator_keywords)
 
-  marriage_cert_count += 1 if found
-
+  certification_count += 1 if found
   move_file(file_name, found)
 
-  puts 'Marriage cert count: ' + marriage_cert_count.to_s
+  puts 'Marriage cert count: ' + certification_count.to_s
   sleep(3)
 end
 
