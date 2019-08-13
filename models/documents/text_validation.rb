@@ -18,12 +18,14 @@ module AiHackathon
       end
 
       def validate
-        curl_command = 'curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer %{access_token}"' % {access_token: access_token}
-        curl_command +=  " https://vision.googleapis.com/v1/images:annotate -d @request.json"
+        token = access_token
+        curl_command = 'curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer %{access_token}"' % {access_token: token}
+        curl_command += " https://vision.googleapis.com/v1/images:annotate -d @request.json"
 
         stdout, stderr, status = Open3.capture3(curl_command)
 
         ret_val = JSON.parse(stdout)
+        puts ret_val
         parsed_text = parse_text(ret_val['responses'])
         return false unless parsed_text
 
@@ -40,6 +42,7 @@ module AiHackathon
       private
 
       def parse_text(responses)
+        return nil unless responses
         response = responses.first
         return nil unless !!response['textAnnotations']
         annotations = response['textAnnotations'].first

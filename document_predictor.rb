@@ -16,6 +16,7 @@ end
 def analyze_file_by_document_type(document_type, file_name, keywords)
   file_data = retrieve_data(file_name)
   result = AiHackathon::Documents::ImageValidation.new(file_data, document_type).validate
+  found = false
   if result
     found = true
     puts "By image recognition, this was confirmed to be a #{document_type.to_s}"
@@ -31,10 +32,11 @@ end
 def analyze_documents(document_type, text_locator_keywords)
   certification_count = 0
   Dir.foreach(TEST_FILE_DIR) do |file_item|
-    next if file_item == '.'
+    next if file_item.start_with?('.')
     next if file_item == '..'
     file_name = file_item.to_s
     puts "Processing #{file_name}..."
+
     next unless File.file?("#{TEST_FILE_DIR}/#{file_name}")
     found = analyze_file_by_document_type(document_type, file_name, text_locator_keywords)
 

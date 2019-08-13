@@ -19,11 +19,9 @@ module AiHackathon
 
       def validate
         curl_command = 'curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer %{access_token}"' % {access_token: access_token}
-        curl_command +=  " https://automl.googleapis.com/v1beta1/projects/plansource-document-audit/locations/us-central1/models/ICN3696112647569160451:predict -d @request.json"
+        curl_command += " https://automl.googleapis.com/v1beta1/projects/plansourceml/locations/us-central1/models/ICN6473529023586817442:predict -d @request.json"
 
         stdout, stderr, status = Open3.capture3(curl_command)
-
-        #puts stdout
 
         ret_val = JSON.parse(stdout)
         payload = ret_val['payload']
